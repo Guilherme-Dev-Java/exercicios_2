@@ -3,14 +3,14 @@ function palavrasUnicas(frase) {
     frase = frase.replace(/[.,!?;:]/g, "").toLowerCase();
 
     const palavras = frase.split(" ");
-    const unicas = [];
+    const unicas = []
 
     for (let i = 0; i < palavras.length; i++) {
         let contador = 0;
 
         for (let j = 0; j < palavras.length; j++) {
             if (palavras[i] === palavras[j]) {
-                contador++;
+                contador++
             }
         }
 
@@ -18,13 +18,13 @@ function palavrasUnicas(frase) {
             let jaExiste = false;
             for (let k = 0; k < unicas.length; k++) {
                 if (unicas[k] === palavras[i]) {
-                    jaExiste = true;
+                    jaExiste = true
                     break;
                 }
             }
 
             if (!jaExiste) {
-                unicas.push(palavras[i]);
+                unicas.push(palavras[i])
             }
         }
     }
@@ -41,7 +41,7 @@ const rl = readline.createInterface({
 });
 
 rl.question("Digite uma frase: ", function(entrada) {
-    const resultado = palavrasUnicas(entrada);
-    console.log("Palavras únicas:", resultado);
+    const resultado = palavrasUnicas(entrada)
+    console.log("Palavras únicas:", resultado)
     rl.close();
-});
+})
