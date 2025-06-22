@@ -186,7 +186,7 @@ Repositório com a implementação da **Lista de Tarefas 2**, desenvolvida com f
 
 **Carlos Guilherme Alves Agripino**  
 
-Desenvolvedor Full-Stack em formação, com foco em Ruby on Rails, Java + Spring Boot e React.
+Desenvolvedor Full-Stack em formação.
 
 
 
